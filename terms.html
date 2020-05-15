@@ -5,14 +5,12 @@
 <style>
 body {font-family: Arial;}
 
-/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   float: left;
@@ -24,17 +22,14 @@ body {font-family: Arial;}
   font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -42,7 +37,6 @@ body {font-family: Arial;}
   border-top: none;
 }
 
-/* Style the close button */
 .topright {
   float: right;
   cursor: pointer;
@@ -54,35 +48,60 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>Tabs</h2>
-<p>Click on the x button in the top right corner to close the current tab:</p>
-
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+   <button class="tablinks" onclick="openCity(event, 'terms_of_use')" id="defaultOpen">Terms of Use</button>
+ <button class="tablinks" onclick="openCity(event, 'privacy_policy')">Privacy Policy</button>
+  
 </div>
 
-<div id="London" class="tabcontent">
+<div id="terms_of_use" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+  <p>By accessing our app, Covid Suraksha, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing Covid Suraksha. The materials contained in Covid Suraksha are protected by applicable copyright and trademark law.</p>
+<h3>2. Use License</h3>
+<ol type="a">
+   <li>Permission is granted to temporarily download one copy of App name per device for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+   <ol type="i">
+       <li>modify or copy the materials;</li>
+       <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+       <li>attempt to decompile or reverse engineer any software contained in App name;</li>
+       <li>remove any copyright or other proprietary notations from the materials; or</li>
+       <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+   </ol>
+    </li>
+   <li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by company name at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>
+</ol>
+<h3>3. Disclaimer</h3>
+<ol type="a">
+   <li>The materials within App name are provided on an 'as is' basis. company name makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>
+   <li>Further, company name does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to App name.</li>
+</ol>
+<h3>4. Limitations</h3>
+<p>In no event shall company name or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use App name, even if company name or a company name authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+<h3>5. Accuracy of materials</h3>
+<p>The materials appearing in App name could include technical, typographical, or photographic errors. company name does not warrant that any of the materials on App name are accurate, complete or current. company name may make changes to the materials contained in App name at any time without notice. However company name does not make any commitment to update the materials.</p>
+<h3>6. Links</h3>
+<p>company name has not reviewed all of the sites linked to its app and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by company name of the site. Use of any such linked website is at the user's own risk.</p>
+<h3>7. Modifications</h3>
+<p>company name may revise these terms of service for its app at any time without notice. By using App name you are agreeing to be bound by the then current version of these terms of service.</p>
+<h3>8. Governing Law</h3>
+<p>These terms and conditions are governed by and construed in accordance with the laws of state name and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+
+
 </div>
 
-<div id="Paris" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
+<div id="privacy_policy" class="tabcontent">
+  <h2>Privacy Policy</h2>
+<p>Your privacy is important to us. It is 's policy to respect your privacy regarding any information we may collect from you through our app, Covid Suraksha.</p>
+<p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
+<p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+<p>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
+<p>Your continued use of our app will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
+<p>This policy is effective as of 13 May 2020.</p>
 
-<div id="Tokyo" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openTerm(evt, termName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -92,13 +111,12 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(termName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
    
-</body>
+</body> 
 </html> 
