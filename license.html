@@ -3,7 +3,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial;}
+body {
+   font-family: sans-serif;
+        }
+        pre {
+        background-color: #eeeeee;
+        padding: 1em;
+        white-space: pre-wrap;
+  }
 
 .tab {
   overflow: hidden;
@@ -49,14 +56,13 @@ body {font-family: Arial;}
 <body>
 
 <div class="tab">
-   <button class="tablinks" onclick="openTerm(event, 'terms_of_use')" id="defaultOpen">Open Source Licences</button>
- <button class="tablinks" onclick="openTerm(event, 'privacy_policy')">Credits</button>
+   <button class="tablinks" onclick="openLicense(event, 'license')" id="defaultOpen">Open Source Licences</button>
+ <button class="tablinks" onclick="openLicense(event, 'credits')">Credits</button>
   
 </div>
 
-<div id="terms_of_use" class="tabcontent">
+<div id="license" class="tabcontent">
   <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-   <h2>Terms of Use</h2>
   <h3>
     Apache License
     <br/>
@@ -142,14 +148,14 @@ SOFTWARE.
 
 </div>
 
-<div id="privacy_policy" class="tabcontent">
+<div id="credits" class="tabcontent">
   <h2>Credits</h2>
 
 
 </div>
 
 <script>
-function openTerm(evt, termName) {
+function openLicense(evt, termName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
